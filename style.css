@@ -1,0 +1,9 @@
+:root {
+  /*light-mode*/
+  --primary-font: "Poppins", sans-serif;
+  --primary-bg-color: #ffffff;
+}
+body {
+  font-family: var(--primary-font);
+  background-color: var(--primary-bg-color);
+}
