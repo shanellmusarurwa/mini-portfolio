@@ -7,9 +7,9 @@
   --btn-hover-color: #2196f3;
   --cta-hover-color: #167bce;
   --btn-bg-light: #eeeeee;
+  --btn-bg-color: #2196f3;
 
   /*dark-mode*/
-  --dark-primary-font: "Poppins", sans-serif;
   --dark-primary-bg-color: #222222;
   --dark-primary-text-color: #ffffff;
   --dark-secondary-color: #878787;
@@ -183,4 +183,98 @@ footer,
 .btn-2:hover,
 .project-wrapper:hover .logo-container a:hover {
   transform: scale(0.98);
+}
+.btn:active,
+.btn-2:active,
+.project-wrapper:active,
+.logo-container a:active {
+  transform: scale(1);
+}
+.contact-btn:hover,
+.download-btn {
+  background-color: var(--btn-bg-color);
+  color: white;
+}
+.contact-btn:hover {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.btn-2:hover,
+.active-btn {
+  background-color: white;
+}
+.btn,
+.btn-2 {
+  height: 3rem;
+}
+.btn {
+  width: 9rem;
+}
+.btn-2 {
+  width: 8.5rem;
+}
+.download-btn {
+  transition: background-color 0.3s ease;
+}
+.Portfolio {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.portfolio-skills {
+  height: 4rem;
+  margin-top: 1.5rem;
+  position: relative;
+}
+.btn-bg,
+.wrapper {
+  width: 20rem;
+}
+article p,
+.btn-bg {
+  background-color: var(--btn-bg-light);
+}
+.hero,
+.Portfolio,
+.skills {
+  margin-top: 2rem;
+}
+.skills {
+  /*display: none;*/
+}
+.wrapper img {
+  border-radius: 1rem;
+}
+article,
+.wrapper h3 {
+  margin-bottom: 1.5rem;
+}
+article {
+  flex-wrap: wrap;
+}
+article p {
+  border-radius: 0.5rem;
+  flex-grow: 20;
+  padding: 1rem;
+}
+footer {
+  margin: 3rem 0;
+}
+@media screen and (min-width: 900px) {
+  .skills,
+  .Portfolio {
+    flex-direction: row;
+    width: 45rem;
+  }
+  .skills {
+    margin: 2rem auto;
+    justify-content: center;
+  }
+  .Portfolio {
+    margin: 2rem auto;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .wrapper {
+    width: calc(48%);
+    flex: none;
+  }
 }
